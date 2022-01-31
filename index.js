@@ -1,3 +1,4 @@
+const PORT = process.env.PORT
 const data = require('./data.js');
 const express = require("express");
 let app = express();
@@ -48,7 +49,7 @@ app.get("/data", (req, res) => {
 
 
 /* Listening to 8080  */
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log("Server is running on port 8080");
 })
 
